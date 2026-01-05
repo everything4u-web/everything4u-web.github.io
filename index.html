@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shree Beauty Parlour & Training Centre | Baheri</title>
+  <meta name="description" content="Best Beauty Parlour in Baheri, Darbhanga. Bridal makeup, facial, hair styling & beautician training. Ladies Only.">
+
+  <meta property="og:title" content="Shree Beauty Parlour Baheri">
+  <meta property="og:description" content="Beauty, Glamour & Style. Bridal Makeup & Training Centre. Only for Ladies.">
+  <meta property="og:image" content="https://www.shreebeautyparlour.online/logo.jpg">
+  <meta property="og:url" content="https://www.shreebeautyparlour.online/">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root{
+      --pink:#d63384;
+      --soft-pink:#fff0f5;
+      --gold:#c5a059;
+      --dark:#2c3e50;
+      --white:#ffffff;
+      --shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Poppins','Tiro Devanagari Hindi',sans-serif;
+      background:var(--soft-pink);
+      color:var(--dark);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    nav{
+      background:rgba(255,255,255,.98);
+      padding:10px 15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      display:flex;
+      align-items:center;
+      box-shadow:0 4px 20px rgba(0,0,0,.08);
+    }
+
+    .nav-logo-img{
+      width:65px;height:65px;
+      border-radius:50%;
+      border:2px solid var(--gold);
+      object-fit:cover;
+      margin-right:15px;
+      flex-shrink:0;
+    }
+
+    .header-title-container{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:5px;
+    }
+
+    .title-col-1{
+      font-family:'Cinzel', serif;
+      font-size:1.4rem;
+      font-weight:800;
+      color:var(--pink);
+      text-transform:uppercase;
+      line-height:1.1;
+      letter-spacing: 1px;
+    }
+
+    .title-col-2{
+      font-family:'Cinzel', serif;
+      font-size:1.1rem;
+      font-weight:700;
+      color:var(--gold);
+      text-transform:uppercase;
+      line-height:1.1;
+      letter-spacing: 1px;
+    }
+
+    /* ---------- HERO SECTION (UPDATED FOR front.jpg) ---------- */
+    .hero{
+      position:relative;
+      height:85vh;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding-bottom:60px;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+      z-index: 1;
+    }
+
+    .hero-content, .ladies-badge-hero {
+      position: relative;
+      z-index: 2;
+    }
+
+    .ladies-badge-hero{
+      position:absolute;
+      top:20px;
+      left:20px;
+      background:var(--dark);
+      color:white;
+      padding:8px 16px;
+      border-radius:30px;
+      font-size:.8rem;
+      font-weight:600;
+      letter-spacing:1px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,.3);
+    }
+
+    .hero-content{
+      max-width:90%;
+      animation:fadeInUp 1s ease;
+    }
+
+    .hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:2.5rem;
+      margin-bottom:0.5rem;
+      text-shadow:2px 2px 5px rgba(0,0,0,.6);
+    }
+
+    .hero p{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:1.3rem;
+      margin-bottom:2rem;
+      text-shadow:1px 1px 3px rgba(0,0,0,.8);
+    }
+
+    .btn-main{
+      background:var(--pink);
+      color:white;
+      padding:14px 35px;
+      border-radius:50px;
+      font-size:1.1rem;
+      font-weight:600;
+      text-decoration:none;
+      display:inline-block;
+      box-shadow:0 6px 18px rgba(214,51,132,.6);
+      border:2px solid white;
+      transition:.3s;
+    }
+
+    .btn-main:hover{background:#b01a62;transform:translateY(-2px)}
+
+    /* ---------- SECTIONS ---------- */
+    .section-padding{padding:4rem 1rem}
+
+    .section-title{text-align:center;margin-bottom:3rem}
+    .section-title h2{font-family:'Playfair Display',serif;font-size:2.3rem;color:var(--dark)}
+    .divider{width:70px;height:3px;background:var(--gold);margin:10px auto}
+
+    /* ---------- SERVICES ---------- */
+    .services-grid{
+      max-width:1200px;margin:auto;
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:15px;
+    }
+    .service-card{
+      background:white;border-radius:15px;padding:20px 15px;text-align:center;
+      box-shadow:var(--shadow);transition:.3s;border-bottom:3px solid transparent;
+    }
+    .service-card:hover{transform:translateY(-5px);border-bottom:3px solid var(--gold)}
+    .icon-box{font-size:2rem;color:var(--gold);margin-bottom:10px}
+    .service-name{font-weight:600;margin-bottom:5px}
+    .service-desc{font-size:.9rem;color:#666;font-family:'Tiro Devanagari Hindi',serif}
+
+    /* ---------- GALLERY ---------- */
+    .gallery-grid{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:20px;max-width:1200px;margin:0 auto;
+    }
+    .gallery-item img{
+        width:100%;height:250px;object-fit:cover;border-radius:15px;box-shadow:var(--shadow);
+    }
+
+    /* ---------- REVIEWS ---------- */
+    .reviews-grid{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:20px;max-width:1200px;margin:0 auto;
+    }
+    .review-card{
+        background:white;padding:25px;border-radius:15px;box-shadow:var(--shadow);text-align:center;
+    }
+    .stars{color:var(--gold);margin-bottom:10px}
+    .review-text{font-style:italic;color:#555;font-size:0.95rem;margin-bottom:15px}
+    .customer-name{font-weight:700;color:var(--pink)}
+
+    /* ---------- LOCATION & CONTACT ---------- */
+    .map-frame{
+        max-width:1200px;margin:0 auto;height:350px;
+        border-radius:15px;overflow:hidden;box-shadow:var(--shadow);background:#eee;
+    }
+    
+    .contact-actions {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .btn-call {
+        background: var(--dark);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .btn-call:hover { background: #000; }
+
+    /* ---------- FOOTER ---------- */
+    footer{
+      background:var(--dark);color:rgba(255,255,255,.8);text-align:center;
+      padding:2rem 1rem;margin-top:4rem;font-size:.9rem;
+    }
+
+    /* ---------- WHATSAPP FLOAT ---------- */
+    .float-wa{
+      position:fixed;right:22px;bottom:22px;width:60px;height:60px;
+      background:#25d366;color:white;border-radius:50%;font-size:32px;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 6px 15px rgba(0,0,0,.35);z-index:9999;text-decoration:none;
+    }
+
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:768px){
+      .hero h1{font-size:2rem}
+      .hero p{font-size:1.1rem}
+      .nav-logo-img{width:55px;height:55px}
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <img src="logo.jpg" alt="Shree Beauty Parlour" class="nav-logo-img">
+  <div class="header-title-container">
+    <div class="title-col-1">SHREE BEAUTY PARLOUR</div>
+    <div class="title-col-2">& TRAINING CENTRE</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="front.jpg" alt="Beauty Parlour Front" class="hero-bg-img">
+
+  <div class="hero-overlay"></div>
+  <div class="ladies-badge-hero">
+    <i class="fa-solid fa-venus"></i> LADIES ONLY
+  </div>
+
+  <div class="hero-content">
+    <h1>Beauty • Glamour • Style</h1>
+    <p>हमारे पार्लर में आपको मिलेगी सौंदर्य, सेहत और स्टाइल की पूरी दुनिया!</p>
+    <a href="https://wa.me/917480084533" class="btn-main">
+      <i class="fa-brands fa-whatsapp"></i> Book Appointment
+    </a>
+  </div>
+</header>
+
+<section class="section-padding">
+  <div class="section-title"><h2>Our Services</h2><div class="divider"></div></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div><div class="service-name">Training Centre</div><div class="service-desc">ब्यूटीशियन कोर्स</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-crown"></i></div><div class="service-name">Bridal Makeup</div><div class="service-desc">दुल्हन का मेकअप 👰</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-paintbrush"></i></div><div class="service-name">Party Makeup</div><div class="service-desc">पार्टी - फैशन मेकअप</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-spa"></i></div><div class="service-name">Facial</div><div class="service-desc">फेसियल 💆‍♀️</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-scissors"></i></div><div class="service-name">Hair Styling</div><div class="service-desc">हेयर कटिंग 💇🏻‍♀️</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-eye"></i></div><div class="service-name">Eyebrow</div><div class="service-desc">आइब्रो थ्रेडिंग 👁️</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div class="service-name">Waxing</div><div class="service-desc">वैक्सिंग 🧵</div></div>
+    <div class="service-card"><div class="icon-box"><i class="fa-solid fa-feather"></i></div><div class="service-name">Manicure</div><div class="service-desc">मैनीक्योर / पेडीक्योर</div></div>
+  </div>
+</section>
+
+<section class="section-padding" style="background:white">
+    <div class="section-title"><h2>Our Work</h2><div class="divider"></div></div>
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600" alt="Makeup"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600" alt="Hair"></div>
+        
+        <div class="gallery-item"><img src="bridal.jpg" alt="Bridal Makeup"></div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="section-title"><h2>Customer Reviews</h2><div class="divider"></div></div>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Best parlour in Baheri! Yahan ki service bahut achhi hai aur rates bhi normal hain."</p>
+            <p class="customer-name">- Pooja Kumari</p>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Meri shadi ka makeup yahan hua tha. Sabne bahut tareef ki. Thank you!"</p>
+            <p class="customer-name">- Neha Singh</p>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"I joined for beautician course. Bahut achha sikhate hain. Very helpful."</p>
+            <p class="customer-name">- Suman Devi</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" style="background:white">
+  <div class="section-title"><h2>Visit Us</h2><div class="divider"></div></div>
+
+  <div class="map-frame">
+     <iframe 
+        width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+        src="https://maps.google.com/maps?q=Shanti+Nayak+High+School+Baheri&t=&z=15&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </div>
+  
+  <div style="text-align:center; margin-top:20px;">
+      <p><strong>Address:</strong> Near +2 Shanti Nayak High School, Baheri, Darbhanga - 847105</p>
+      
+      <div class="contact-actions">
+          <a href="tel:+917480084533" class="btn-call">
+              <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+      </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Shree Beauty Parlour & Training Centre, Baheri<br>
+  Designed for <strong>Ladies Only</strong>
+</footer>
+
+<a href="https://wa.me/917480084533" class="float-wa" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
